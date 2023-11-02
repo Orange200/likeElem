@@ -1,80 +1,163 @@
 <template>
-	<view class="container">
-		<view class="header">Demo — XR</view>
-			<p>1</p>
-		<ul>
-		<li><image src="../../static/汉堡.jpg" class="burger" ></image>
-		<p> 这是一段测试文字</p>
-		</li>
-		<li><image src="../../static/汉堡.jpg" class="burger" ></image>
-		<p> 这是一段测试文字</p>
-		</li>
-		<li><image src="../../static/汉堡.jpg" class="burger" ></image>
-		<p> 这是一段测试文字</p>
-		</li>
-		</ul>
-	</view>
+  <view class="container">
+    <view class="header">
+      <p>饿了么</p>
+      <!-- <el-button>哈哈</el-button> -->
+      <!-- <uni-datetime-picker></uni-datetime-picker> -->
+      <p style="margin-left: 10rpx;"><uni-icons type="location" size="20" color="rgb(255, 255, 255)"></uni-icons></p>
+      <p style='font-size: 30rpx;'>
+        <navigator>正在获取您的定位...</navigator>
+      </p>
+
+    </view>
+    <uni-search-bar :radius="100" @confirm="search" placeholder="花小小新疆炒米粉"></uni-search-bar>
+
+    <FoodItem v-for="item in this.foodList" :imageUrl="item.imageUrl" :title='item.title' :evaluation="item.evaluation"
+      :sold="item.sold" :sendTime="item.sendTime" :distance="item.distance" :minPrice="item.minPrice"
+      :sendPrice="item.sendPrice">
+    </FoodItem>
+
+
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
-				data:'',
-				file:{},
-			}
-		},
-		methods: {
+  import FoodItem from './components/FoodItem.vue'
+  export default {
+    components: {
+      FoodItem,
+    },
+    data() {
+      return {
+        href: 'https://uniapp.dcloud.io/component/README?id=uniui',
+        data: {
+          foodList: [{
+              imageUrl: 'https://img2.baidu.com/it/u=470521857,1575026035&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+              title: '沪上阿姨鲜果茶',
+              evaluation: '5',
+              sold: 800,
+              sendTime: 25,
+              distance: 213,
+              minPrice: 18,
+              sendPrice: 0.5
+            },
+            {
+              imageUrl: 'https://img2.baidu.com/it/u=470521857,1575026035&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+              title: '古茗',
+              evaluation: '4.7',
+              sold: 1000,
+              sendTime: 32,
+              distance: 1.3,
+              minPrice: 18,
+              sendPrice: 1
+            },
+            {
+              imageUrl: 'https://img2.baidu.com/it/u=470521857,1575026035&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+              title: '茶百道',
+              evaluation: '4.9',
+              sold: 600,
+              sendTime: 38,
+              distance: 1.3,
+              minPrice: 18,
+              sendPrice: 0.5
+            },
+            {
+              imageUrl: 'https://img2.baidu.com/it/u=470521857,1575026035&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+              title: '周敏敏抚州汤粉',
+              evaluation: '4.6',
+              sold: 2000,
+              sendTime: 42,
+              distance: 3.6,
+              minPrice: 15,
+              sendPrice: 2.4
+            },
+            {
+              imageUrl: 'https://img2.baidu.com/it/u=470521857,1575026035&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+              title: '淄博烧烤',
+              evaluation: '4.4',
+              sold: 800,
+              sendTime: 39,
+              distance: 5.1,
+              minPrice: 15,
+              sendPrice: 0
+            },
+          ]
+        },
+        file: {},
+      }
+    },
 
-		}
-	}
+    methods: {
+
+    },
+
+    mounted() {
+      // console.log('打印uVeiw版本号', uni.$u.config.v);
+    },
+  }
 </script>
 
-<style>
-	.container {
-	/* 	padding: 20px;
+<style lang='scss'>
+  .container {
+    /* 	padding: 20px;
 		font-size: 14px;
 		line-height: 24px; */
-	}
-	.header{
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		background-color: rgb(37, 164, 187);
-		height: 111px;
-		color:rgb(240, 248, 255);
-		font-size: 19px;
-		font-weight:500;
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	}
-	.burger{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 20px;
-		width: 90px;
-		height: 120px;
-		border:5px;
-		border-radius: 20%;
-		margin-left: -35px;
-	}
-	ul{
-		width: 90%;
-		height: 100%;
-		margin: 10px 20px 0 20px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		background-color: aquamarine;
-	}
-	ul li{
-		
-		margin: 0 0 10px 0;
-		display: flex;
-		align-items: center;
-		justify-content:flex-end;
-	}
+    position: absolute;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    align-items: center;
+    /* position: relative; */
+    width: 100%;
+    background-color: rgb(20, 186, 250);
+    height: 80px;
+
+  }
+
+  .header p {
+    position: relative;
+    margin-left: 30rpx;
+    font-weight: 800;
+    font-size: 40rpx;
+    color: rgb(255, 255, 255);
+    ;
+  }
+
+  .burger {
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: center; */
+    position: relative;
+    margin-top: 20rpx;
+    width: 90rpx;
+    height: 120rpx;
+    border: 5rpx;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    border-radius: 20%;
+    margin-left: -35rpx;
+  }
+
+  ul {
+    width: 90%;
+    height: 100%;
+    margin: 10rpx 20rpx 0 20rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+  }
+
+  ul li {
+
+    margin: 0 0 10rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 </style>
