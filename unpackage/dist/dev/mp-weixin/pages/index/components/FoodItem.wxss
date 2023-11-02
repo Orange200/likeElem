@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
-/* uni.scss */
 .food-item.data-v-b0ceb3b8 {
   display: flex;
   align-items: center;

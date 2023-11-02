@@ -17534,11 +17534,7 @@ function normalizeComponent (
 /* 55 */,
 /* 56 */,
 /* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */
+/* 58 */
 /*!*************************************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \*************************************************************************************************************/
@@ -18559,11 +18555,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
 /* 63 */,
 /* 64 */,
 /* 65 */,
-/* 66 */,
-/* 67 */
+/* 66 */
 /*!****************************************************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js ***!
   \****************************************************************************************************************************/
@@ -18578,9 +18577,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 68));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 69));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 70));
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 67));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 68));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 69));
 var _default = {
   en: _en.default,
   'zh-Hans': _zhHans.default,
@@ -18589,7 +18588,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 68 */
+/* 67 */
 /*!***************************************************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json ***!
   \***************************************************************************************************************************/
@@ -18599,24 +18598,24 @@ exports.default = _default;
 module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"Search enter content\"}");
 
 /***/ }),
-/* 69 */
+/* 68 */
 /*!********************************************************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json ***!
   \********************************************************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"请输入搜索内容\"}");
+module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"取消\",\"uni-search-bar.placeholder\":\"请输入搜索内容\"}");
 
 /***/ }),
-/* 70 */
+/* 69 */
 /*!********************************************************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json ***!
   \********************************************************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"請輸入搜索內容\"}");
+module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"取消\",\"uni-search-bar.placeholder\":\"請輸入搜索內容\"}");
 
 /***/ })
 ]]);

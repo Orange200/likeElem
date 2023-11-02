@@ -1,6 +1,6 @@
 <template>
   <view class="food-item">
-    <image style="width: 200rpx; height: 200rpx; margin:15rpx 15rpx 15rpx 15rpx;" src="imageUrl"></image>
+    <image style="width: 200rpx; height: 200rpx; margin:15rpx 15rpx 15rpx 15rpx;" :src="imageUrl"></image>
     <view class="food-info">
       <p class='food-info-title'>{{title}}</p>
       <p class="food-info-shop">
@@ -24,7 +24,7 @@
       //图片地址
       imageUrl: {
         type: String,
-        default: "`https: //img2.baidu.com/it/u=470521857,1575026035&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500`",
+        default: 'https://img2.baidu.com/it/u=470521857,1575026035&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
       },
       //店铺名
       title: {

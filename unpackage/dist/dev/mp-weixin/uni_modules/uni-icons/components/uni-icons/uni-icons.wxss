@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
-/* uni.scss */
 .uniui-color:before {
   content: "\e6cf";
 }
