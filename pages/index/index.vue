@@ -1,40 +1,47 @@
 <template>
   <view class="container">
-    <view class="header">
-      <p>饿了么</p>
-      <!-- <el-button>哈哈</el-button> -->
-      <!-- <uni-datetime-picker></uni-datetime-picker> -->
-      <p style="margin-left: 10rpx"><uni-icons type="location" size="20" color="rgb(255, 255, 255)"></uni-icons></p>
-      <p style="font-size: 30rpx">
-        <!-- 使用地图api -->
-        <navigator>
-          正在获取您的定位...
-          <uni-icons type="bottom" size="15" color="rgb(255,255,255)"></uni-icons>
-        </navigator>
-      </p>
+    <view class="fix-head">
+      <view class="header">
+        <p>饿了么</p>
+        <!-- <el-button>哈哈</el-button> -->
+        <!-- <uni-datetime-picker></uni-datetime-picker> -->
+        <p style="margin-left: 10rpx"><uni-icons type="location" size="20" color="rgb(255, 255, 255)"></uni-icons></p>
+        <p style="font-size: 30rpx">
+          <!-- 使用地图api -->
+
+          <navigator>
+            正在获取您的定位...
+            <uni-icons type="bottom" size="15" color="rgb(255,255,255)"></uni-icons>
+          </navigator>
+        </p>
+      </view>
+      <view class="head-search">
+        <u-search
+          margin="10rpx 10rpx 10rpx 10rpx"
+          action-text="搜索"
+          bg-color="#fff"
+          border-color="#14bafa"
+          v-model.trim="searchQuery"
+          @search="search"
+          @custom="search"
+          @clear="resetList"
+          placeholder="喜茶"
+        ></u-search>
+      </view>
     </view>
-    <u-search
-      margin="10rpx 10rpx 10rpx 10rpx"
-      action-text="搜索"
-      bg-color="#fff"
-      border-color="#14bafa"
-      v-model.trim="searchQuery"
-      @search="search"
-      @custom="search"
-      @clear="resetList"
-      placeholder="喜茶"
-    ></u-search>
-    <FoodItem
-      v-for="item in foodList"
-      :imageUrl="item.imageUrl"
-      :title="item.title"
-      :evaluation="item.evaluation"
-      :sold="item.sold"
-      :sendTime="item.sendTime"
-      :distance="item.distance"
-      :minPrice="item.minPrice"
-      :sendPrice="item.sendPrice"
-    ></FoodItem>
+    <view class="food-list">
+      <FoodItem
+        v-for="item in foodList"
+        :imageUrl="item.imageUrl"
+        :title="item.title"
+        :evaluation="item.evaluation"
+        :sold="item.sold"
+        :sendTime="item.sendTime"
+        :distance="item.distance"
+        :minPrice="item.minPrice"
+        :sendPrice="item.sendPrice"
+      ></FoodItem>
+    </view>
     <u-tabbar v-model="current" :list="list" :mid-button="true"></u-tabbar>
   </view>
 </template>
@@ -205,11 +212,13 @@ export default {
       this.foodList = this.foodList.filter((i) => i.title.indexOf(context.searchQuery) > -1);
       console.log('过滤', this.foodList);
     },
+
     //重置
     resetList() {
       this.$nextTick(() => {
         console.log('哇撒擦擦');
         this.foodList = this.copyFood;
+        this.searchQuery = '';
       });
     }
   }
@@ -226,6 +235,12 @@ export default {
   background-color: rgb(245, 245, 245);
 }
 
+.fix-head {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
 .header {
   display: flex;
   justify-content: flex-start;
@@ -236,6 +251,13 @@ export default {
   background-color: rgb(20, 186, 250);
   height: 80px;
 }
+.head-search {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 50rpx;
+  padding: 10rpx 0 20rpx 0;
+  border-radius: 15% 15% 0 0;
+}
 
 .header p {
   position: relative;
@@ -244,36 +266,8 @@ export default {
   font-size: 40rpx;
   color: rgb(255, 255, 255);
 }
-
-.burger {
-  /* display: flex;
-    align-items: flex-start;
-    justify-content: center; */
+.food-list {
   position: relative;
-  margin-top: 20rpx;
-  width: 90rpx;
-  height: 120rpx;
-  border: 5rpx;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  border-radius: 20%;
-  margin-left: -35rpx;
-}
-
-ul {
-  width: 90%;
-  height: 100%;
-  margin: 10rpx 20rpx 0 20rpx;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: aquamarine;
-}
-
-ul li {
-  margin: 0 0 10rpx 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  top: 220rpx;
 }
 </style>
