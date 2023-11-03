@@ -14,7 +14,7 @@
     </view>
     <uni-search-bar :radius="100" v-model="searchQuery" @confirm="search" @cancel="resetList"
       placeholder="花小小新疆炒米粉"></uni-search-bar>
-    <FoodItem v-for="item in this.foodList" :imageUrl="item.imageUrl" :title='item.title' :evaluation="item.evaluation"
+    <FoodItem v-for="item in foodList" :imageUrl="item.imageUrl" :title='item.title' :evaluation="item.evaluation"
       :sold="item.sold" :sendTime="item.sendTime" :distance="item.distance" :minPrice="item.minPrice"
       :sendPrice="item.sendPrice">
     </FoodItem>

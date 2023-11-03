@@ -6,8 +6,9 @@
       <p class="food-info-shop">
         <text style="color:orangered; font-size:28rpx;margin-right:15rpx; ">{{evaluation}}分</text>
         <text>月售{{sold}}+</text>
-        <text style="margin-left: 100rpx;">{{sendTime}}分钟
-          {{distance>20 && distance<1000 ? `${distance}m`:`${distance}km`}}</text>
+        <text style="position: absolute; right: 128rpx;">{{sendTime}}分钟</text>
+        <text
+          style="position: absolute; right: 50rpx; margin-left: 12rpx;">{{distance>20 && distance<1000 ? `${distance}m`:`${distance}km`}}</text>
       </p>
       <p class="food-info-shop">起送￥{{minPrice}} {{sendPrice ==0 ? '免配送费':`配送￥${sendPrice}`}}
         <text class="food-info-send">蓝骑士专送</text>
@@ -86,6 +87,7 @@
     justify-content: flex-start;
     margin: 10rpx 10rpx 0 10rpx;
     background-color: #fff;
+    border-radius: 16rpx 16rpx 16rpx 16rpx;
   }
 
   .food-info {
@@ -101,7 +103,7 @@
   }
 
   .food-info-title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 35rpx;
   }
 
@@ -114,9 +116,11 @@
     width: auto;
     height: auto;
     color: rgb(20, 186, 250);
-    border-radius: 10%;
+    border-radius: 5%;
     border: 0.1rpx solid rgb(66, 195, 255);
     font-size: 24rpx;
-    margin-left: 100rpx;
+    font-weight: 800;
+    position: absolute;
+    right: 50rpx;
   }
 </style>
