@@ -164,10 +164,14 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 
 
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var FoodItem = function FoodItem() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/FoodItem */ "pages/index/components/FoodItem").then((function () {
     return resolve(__webpack_require__(/*! ./components/FoodItem.vue */ 72));
@@ -179,7 +183,56 @@ var _default = {
   },
   data: function data() {
     return {
+      searchQuery: '',
+      //查询参数
+      //食物列表
       foodList: [{
+        imageUrl: 'https://img2.baidu.com/it/u=434216605,1066115281&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+        title: '沪上阿姨鲜果茶',
+        evaluation: 5,
+        sold: 800,
+        sendTime: 25,
+        distance: 213,
+        minPrice: 18,
+        sendPrice: 0.5
+      }, {
+        imageUrl: 'https://img2.baidu.com/it/u=3361341793,3033305644&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+        title: '古茗',
+        evaluation: 4.7,
+        sold: 1000,
+        sendTime: 32,
+        distance: 1.3,
+        minPrice: 18,
+        sendPrice: 1
+      }, {
+        imageUrl: 'https://img2.baidu.com/it/u=2153116346,2941753495&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500',
+        title: '茶百道',
+        evaluation: 4.9,
+        sold: 600,
+        sendTime: 38,
+        distance: 1.3,
+        minPrice: 18,
+        sendPrice: 0.5
+      }, {
+        imageUrl: 'https://img2.baidu.com/it/u=470521857,1575026035&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+        title: '花小小新疆炒米粉',
+        evaluation: 4.6,
+        sold: 2000,
+        sendTime: 42,
+        distance: 3.6,
+        minPrice: 15,
+        sendPrice: 2.4
+      }, {
+        imageUrl: 'https://img1.baidu.com/it/u=826497891,3360915022&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889',
+        title: '淄博烧烤',
+        evaluation: 4.4,
+        sold: 800,
+        sendTime: 39,
+        distance: 5.1,
+        minPrice: 15,
+        sendPrice: 0
+      }],
+      copyFood: [{
         imageUrl: 'https://img2.baidu.com/it/u=434216605,1066115281&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
         title: '沪上阿姨鲜果茶',
         evaluation: 5,
@@ -227,9 +280,35 @@ var _default = {
       }]
     };
   },
-  methods: {},
-  mounted: function mounted() {
-    // console.log('打印uVeiw版本号', uni.$u.config.v);
+  // watch: {
+  //   foodList() {
+  //     this.$nextTick() => {
+  //       console.log('哒哒哒')
+  //     }
+  //   },
+  // },
+  onShow: function onShow() {
+    var copyFood = _objectSpread({}, this.foodList);
+    console.log('克隆', copyFood);
+  },
+  methods: {
+    //查询
+    search: function search() {
+      var context = this;
+      console.log('我被打印了', context.searchQuery);
+      this.foodList = this.foodList.filter(function (i) {
+        return i.title.indexOf(context.searchQuery) > -1;
+      });
+      console.log('过滤', this.foodList);
+    },
+    //重置
+    resetList: function resetList() {
+      var _this = this;
+      this.$nextTick(function () {
+        console.log('哇撒擦擦');
+        _this.foodList = _this.copyFood;
+      });
+    }
   }
 };
 exports.default = _default;

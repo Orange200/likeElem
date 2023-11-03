@@ -31,7 +31,7 @@
   height: auto;
   color: #14bafa;
   border-radius: 10%;
-  border: 0.5rpx solid #42c3ff;
+  border: 0.1rpx solid #42c3ff;
   font-size: 24rpx;
   margin-left: 100rpx;
 }

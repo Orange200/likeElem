@@ -115,7 +115,7 @@
     height: auto;
     color: rgb(20, 186, 250);
     border-radius: 10%;
-    border: 0.5rpx solid rgb(66, 195, 255);
+    border: 0.1rpx solid rgb(66, 195, 255);
     font-size: 24rpx;
     margin-left: 100rpx;
   }
