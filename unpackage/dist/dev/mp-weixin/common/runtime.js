@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"uni_modules/uni-icons/components/uni-icons/uni-icons":1,"uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar":1,"pages/index/components/FoodItem":1};
+/******/ 		var cssChunks = {"uni_modules/uni-icons/components/uni-icons/uni-icons":1,"uview-ui/components/u-search/u-search":1,"uview-ui/components/u-tabbar/u-tabbar":1,"pages/index/components/FoodItem":1,"uview-ui/components/u-icon/u-icon":1,"uview-ui/components/u-safe-bottom/u-safe-bottom":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"uni_modules/uni-icons/components/uni-icons/uni-icons":"uni_modules/uni-icons/components/uni-icons/uni-icons","uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar":"uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar","pages/index/components/FoodItem":"pages/index/components/FoodItem"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"uni_modules/uni-icons/components/uni-icons/uni-icons":"uni_modules/uni-icons/components/uni-icons/uni-icons","uview-ui/components/u-search/u-search":"uview-ui/components/u-search/u-search","uview-ui/components/u-tabbar/u-tabbar":"uview-ui/components/u-tabbar/u-tabbar","pages/index/components/FoodItem":"pages/index/components/FoodItem","uview-ui/components/u-icon/u-icon":"uview-ui/components/u-icon/u-icon","uview-ui/components/u-safe-bottom/u-safe-bottom":"uview-ui/components/u-safe-bottom/u-safe-bottom"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
