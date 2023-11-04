@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "首页",
-  "usingComponents": {
-    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
-    "u-search": "/uview-ui/components/u-search/u-search",
-    "u-tabbar": "/uview-ui/components/u-tabbar/u-tabbar",
-    "food-item": "/pages/index/components/FoodItem"
-  }
-}

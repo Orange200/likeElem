@@ -5,6 +5,8 @@ import App from './App'
 // import 'node_modules/element-ui/lib/theme-chalk/index.css';
 // main.js，注意要在use方法之后执行
 import uView from "uview-ui";
+import store from 'store/store.js'
+
 Vue.use(uView);
 // 如此配置即可
 uni.$u.config.unit = 'rpx'

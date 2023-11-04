@@ -3,11 +3,32 @@
     "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
   },
   "pages": [{
-    "path": "pages/index/index",
-    "style": {
-      "navigationBarTitleText": "首页"
-    }
-  }],
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "page": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+
+  ],
+  "tabBar": {
+    "color": "pink",
+    "selectedColor": "black",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [{
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/my/index"
+      }
+    ]
+  },
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",

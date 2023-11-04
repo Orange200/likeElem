@@ -9,5 +9,19 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
+  "tabBar": {
+    "color": "pink",
+    "selectedColor": "black",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/my/index"
+      }
+    ]
+  },
   "usingComponents": {}
 }
