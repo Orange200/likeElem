@@ -3,26 +3,61 @@
     "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
   },
   "pages": [{
-    "path": "pages/index/index",
-    "style": {
-      "navigationBarTitleText": "首页"
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "饿了么"
+      }
+    },
+    {
+      "path": "pages/order/order",
+      "style": {
+        "navigationBarTitleText": "订单"
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
     }
-  }],
+  ],
   "globalStyle": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "#ffffff",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#0097ff",
+    "backgroundColor": "#0097ff",
     "app-plus": {
       "background": "#efeff4"
     }
   },
-  "condition": { //模式配置，仅开发期间生效
-    "current": 0, //当前激活的模式(list 的索引项)
+  "condition": {
+    "current": 0
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "white",
+    "spacing": "1px",
+    "position": "bottom",
+    "backgroundColor": "#f7fcfe",
     "list": [{
-      "name": "", //模式名称
-      "path": "", //启动页面，必选
-      "query": "" //启动参数，在页面的onLoad函数里面得到
-    }]
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/饿了么.png",
+        "selectedIconPath": "static/icon/饿了么 (1).png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "static/icon/饿了么订单管理.png",
+        "selectedIconPath": "static/icon/饿了么订单管理 (1).png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/icon/我的 (1).png",
+        "selectedIconPath": "static/icon/我的 (2).png",
+        "text": "我的"
+      }
+    ]
   }
 }

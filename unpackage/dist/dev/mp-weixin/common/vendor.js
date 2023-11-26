@@ -9955,7 +9955,21 @@ var k = "development" === "development",
   C = "true" === undefined || !0 === undefined,
   P = b([]),
   A = "h5" === T ? "web" : "app-plus" === T ? "app" : T,
-  E = b(undefined),
+  E = b({
+    "address": [
+        "127.0.0.1",
+        "172.16.0.2",
+        "192.168.183.163"
+    ],
+    "debugPort": 9000,
+    "initialLaunchType": "local",
+    "servePort": 7000,
+    "skipFiles": [
+        "<node_internals>/**",
+        "F:/IDM_ZIP/HBuilderX/plugins/unicloud/**/*.js"
+    ]
+}
+),
   O = b([{"provider":"aliyun","spaceName":"demoxr","spaceId":"mp-51be1070-f896-4de3-a105-26a7c32955a3","clientSecret":"yM1/1AM3SV9v+Ggii65Jzg==","endpoint":"https://api.next.bspapp.com"}]) || [],
   x = true;
 var R = "";
@@ -17330,24 +17344,53 @@ var _default = {
   "pages": [{
     "path": "pages/index/index",
     "style": {
-      "navigationBarTitleText": "首页"
+      "navigationBarTitleText": "饿了么"
+    }
+  }, {
+    "path": "pages/order/order",
+    "style": {
+      "navigationBarTitleText": "订单"
+    }
+  }, {
+    "path": "pages/mine/mine",
+    "style": {
+      "navigationBarTitleText": "我的"
     }
   }],
   "globalStyle": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "#ffffff",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#0097ff",
+    "backgroundColor": "#0097ff",
     "app-plus": {
       "background": "#efeff4"
     }
   },
   "condition": {
-    "current": 0,
+    "current": 0
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "white",
+    "spacing": "1px",
+    "position": "bottom",
+    "backgroundColor": "#f7fcfe",
     "list": [{
-      "name": "",
-      "path": "",
-      "query": ""
+      "pagePath": "pages/index/index",
+      "iconPath": "static/icon/饿了么.png",
+      "selectedIconPath": "static/icon/饿了么 (1).png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/order/order",
+      "iconPath": "static/icon/饿了么订单管理.png",
+      "selectedIconPath": "static/icon/饿了么订单管理 (1).png",
+      "text": "订单"
+    }, {
+      "pagePath": "pages/mine/mine",
+      "iconPath": "static/icon/我的 (1).png",
+      "selectedIconPath": "static/icon/我的 (2).png",
+      "text": "我的"
     }]
   }
 };
@@ -26740,7 +26783,23 @@ exports.default = _default;
 /* 177 */,
 /* 178 */,
 /* 179 */,
-/* 180 */
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */
 /*!*************************************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \*************************************************************************************************************/
@@ -27761,14 +27820,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */
 /*!***********************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uview-ui/components/u-search/props.js ***!
   \***********************************************************************************************/
@@ -27904,90 +27963,21 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */
-/*!***********************************************************************************************!*\
-  !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uview-ui/components/u-tabbar/props.js ***!
-  \***********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 当前匹配项的name
-    value: {
-      type: [String, Number, null],
-      default: uni.$u.props.tabbar.value
-    },
-    // 是否为iPhoneX留出底部安全距离
-    safeAreaInsetBottom: {
-      type: Boolean,
-      default: uni.$u.props.tabbar.safeAreaInsetBottom
-    },
-    // 是否显示上方边框
-    border: {
-      type: Boolean,
-      default: uni.$u.props.tabbar.border
-    },
-    // 元素层级z-index
-    zIndex: {
-      type: [String, Number],
-      default: uni.$u.props.tabbar.zIndex
-    },
-    // 选中标签的颜色
-    activeColor: {
-      type: String,
-      default: uni.$u.props.tabbar.activeColor
-    },
-    // 未选中标签的颜色
-    inactiveColor: {
-      type: String,
-      default: uni.$u.props.tabbar.inactiveColor
-    },
-    // 是否固定在底部
-    fixed: {
-      type: Boolean,
-      default: uni.$u.props.tabbar.fixed
-    },
-    // fixed定位固定在底部时，是否生成一个等高元素防止塌陷
-    placeholder: {
-      type: Boolean,
-      default: uni.$u.props.tabbar.placeholder
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
 /* 205 */,
 /* 206 */,
 /* 207 */,
 /* 208 */,
 /* 209 */,
 /* 210 */,
-/* 211 */
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */
 /*!*********************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uview-ui/components/u-icon/icons.js ***!
   \*********************************************************************************************/
@@ -28218,7 +28208,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 212 */
+/* 220 */
 /*!*********************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uview-ui/components/u-icon/props.js ***!
   \*********************************************************************************************/
@@ -28323,33 +28313,6 @@ var _default = {
 };
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 213 */,
-/* 214 */,
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */
-/*!****************************************************************************************************!*\
-  !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uview-ui/components/u-safe-bottom/props.js ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {}
-};
-exports.default = _default;
 
 /***/ })
 ]]);

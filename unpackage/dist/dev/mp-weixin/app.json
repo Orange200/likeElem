@@ -1,13 +1,43 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/order/order",
+    "pages/mine/mine"
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#0097ff",
+    "backgroundColor": "#0097ff"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "white",
+    "spacing": "1px",
+    "position": "bottom",
+    "backgroundColor": "#f7fcfe",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/饿了么.png",
+        "selectedIconPath": "static/icon/饿了么 (1).png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "static/icon/饿了么订单管理.png",
+        "selectedIconPath": "static/icon/饿了么订单管理 (1).png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/icon/我的 (1).png",
+        "selectedIconPath": "static/icon/我的 (2).png",
+        "text": "我的"
+      }
+    ]
   },
   "usingComponents": {}
 }

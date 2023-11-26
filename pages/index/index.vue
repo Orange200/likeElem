@@ -42,7 +42,7 @@
         :sendPrice="item.sendPrice"
       ></FoodItem>
     </view>
-    <u-tabbar v-model="current" :list="list" :mid-button="true"></u-tabbar>
+    <!-- <u-tabbar v-model="current" :list="list" :mid-button="true"></u-tabbar> -->
   </view>
 </template>
 
