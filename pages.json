@@ -37,7 +37,7 @@
     "color": "#7A7E83",
     "selectedColor": "#007AFF",
     "borderStyle": "white",
-    "spacing": "1px",
+    // "spacing": "1rpx",
     "position": "bottom",
     "backgroundColor": "#f7fcfe",
     "list": [{

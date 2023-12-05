@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+/* uni.scss */
+.container.data-v-4d26b682 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 0 13rpx 10rpx 13rpx;
+  padding: 8rpx 8rpx 8rpx 8rpx;
+  border-radius: 5%;
+  height: 287rpx;
+}
+.isArrive.data-v-4d26b682 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  right: 32rpx;
+}
+.orderBusiness.data-v-4d26b682 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 0 7rpx 7rpx 7rpx;
+}
+.isInArea.data-v-4d26b682 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #ffffff;
+  font-size: 24rpx;
+  margin: 10rpx 0 10rpx 0;
+  background-color: #989898;
+  width: 160rpx;
+  height: 32rpx;
+  border-radius: 5%;
+}
+.order-list.data-v-4d26b682 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 40rpx,0,0,0;
+  position: relative;
+  bottom: -20rpx;
+}
+.order-price.data-v-4d26b682 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  top: -100rpx;
+  right: -600rpx;
+}
+

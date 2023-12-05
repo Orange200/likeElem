@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"uni_modules/uni-icons/components/uni-icons/uni-icons":1,"uview-ui/components/u-search/u-search":1,"pages/index/components/FoodItem":1,"uview-ui/components/u-icon/u-icon":1};
+/******/ 		var cssChunks = {"uni_modules/uni-icons/components/uni-icons/uni-icons":1,"uview-ui/components/u-search/u-search":1,"pages/index/components/FoodItem":1,"uview-ui/components/u-tabs/u-tabs":1,"pages/order/components/OrderItem":1,"uview-ui/components/u-icon/u-icon":1,"uview-ui/components/u-badge/u-badge":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"uni_modules/uni-icons/components/uni-icons/uni-icons":"uni_modules/uni-icons/components/uni-icons/uni-icons","uview-ui/components/u-search/u-search":"uview-ui/components/u-search/u-search","pages/index/components/FoodItem":"pages/index/components/FoodItem","uview-ui/components/u-icon/u-icon":"uview-ui/components/u-icon/u-icon"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"uni_modules/uni-icons/components/uni-icons/uni-icons":"uni_modules/uni-icons/components/uni-icons/uni-icons","uview-ui/components/u-search/u-search":"uview-ui/components/u-search/u-search","pages/index/components/FoodItem":"pages/index/components/FoodItem","uview-ui/components/u-tabs/u-tabs":"uview-ui/components/u-tabs/u-tabs","pages/order/components/OrderItem":"pages/order/components/OrderItem","uview-ui/components/u-icon/u-icon":"uview-ui/components/u-icon/u-icon","uview-ui/components/u-badge/u-badge":"uview-ui/components/u-badge/u-badge"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

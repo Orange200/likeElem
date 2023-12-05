@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "订单",
-  "usingComponents": {}
+  "usingComponents": {
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "order-item": "/pages/order/components/OrderItem"
+  }
 }
