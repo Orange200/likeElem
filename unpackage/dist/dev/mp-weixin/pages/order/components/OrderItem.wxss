@@ -14,6 +14,7 @@
   height: 287rpx;
 }
 .isArrive.data-v-4d26b682 {
+  font-size: 28rpx;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -25,7 +26,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  margin: 0 7rpx 7rpx 7rpx;
+  margin: 11rpx 7rpx 7rpx 7rpx;
 }
 .isInArea.data-v-4d26b682 {
   display: flex;
@@ -34,7 +35,7 @@
   flex-direction: row;
   color: #ffffff;
   font-size: 24rpx;
-  margin: 10rpx 0 10rpx 0;
+  margin: 10rpx 0 10rpx 11rpx;
   background-color: #989898;
   width: 160rpx;
   height: 32rpx;
@@ -45,9 +46,10 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  margin: 40rpx,0,0,0;
+  margin: 40rpx,0,0,11rpx;
   position: relative;
   bottom: -20rpx;
+  left: 11rpx;
 }
 .order-price.data-v-4d26b682 {
   display: flex;

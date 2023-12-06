@@ -1,7 +1,7 @@
 <template>
   <view class="container">
     <view class="orderBusiness">
-      <image style="width: 46rpx; height: 46rpx" :src="businessPic"></image>
+      <image style="width: 46rpx; height: 46rpx;margin-left: 11rpx;" :src="businessPic"></image>
       <p style="margin: 0 0 0 10rpx; font-size: 36rpx">
         {{ businessName }}
         <p style="color: rgb(153, 153, 153); margin-left: 20rpx">></p>
@@ -86,6 +86,7 @@ export default {
   height:287rpx;
 }
 .isArrive {
+  font-size:28rpx ;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -97,7 +98,7 @@ export default {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  margin: 0 7rpx 7rpx 7rpx;
+  margin: 11rpx 7rpx 7rpx 7rpx;
 }
 .isInArea {
   display: flex;
@@ -106,7 +107,7 @@ export default {
   flex-direction: row;
   color: #ffffff;
   font-size: 24rpx;
-  margin: 10rpx 0 10rpx 0;
+  margin: 10rpx 0 10rpx 11rpx;
   // position: absolute;
   // left: -50rpx;
   background-color: rgb(152, 152, 152);
@@ -120,9 +121,10 @@ export default {
   align-items: flex-start;
   flex-direction: row;
   // overflow: hidden;
-  margin:40rpx,0,0,0;
+  margin:40rpx,0,0,11rpx;
   position: relative;
   bottom:-20rpx;
+  left:11rpx;
   
   // position: relative;
   // top:-100rpx;

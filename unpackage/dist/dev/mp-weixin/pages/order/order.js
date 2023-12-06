@@ -102,7 +102,7 @@ var components
 try {
   components = {
     uTabs: function () {
-      return Promise.all(/*! import() | uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-tabs/u-tabs.vue */ 214))
+      return Promise.all(/*! import() | uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-tabs/u-tabs.vue */ 257))
     },
   }
 } catch (e) {
@@ -188,7 +188,7 @@ var _default = {
         foodPrice: 36.8,
         foodName: '巴拉巴拉...'
       }, {
-        businessPic: 'https://img2.baidu.com/it/u=434216605,1066115281&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+        businessPic: 'https://img2.baidu.com/it/u=2153116346,2941753495&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500',
         businessName: '茶百道',
         isArrive: 0,
         isInArea: false,
@@ -197,7 +197,7 @@ var _default = {
         foodName: '茶百道厚乳茶',
         foodPrice: 21.8
       }, {
-        businessPic: 'https://img2.baidu.com/it/u=434216605,1066115281&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+        businessPic: 'https://img2.baidu.com/it/u=2724186936,1778825741&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500',
         businessName: '蜜雪冰城',
         isInArea: false,
         isArrive: 0,

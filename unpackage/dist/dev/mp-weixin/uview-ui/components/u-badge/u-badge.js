@@ -1,46 +1,5 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["uview-ui/components/u-badge/u-badge"],{
 
-/***/ 238:
-/*!*************************************************************************************************!*\
-  !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uview-ui/components/u-badge/u-badge.vue ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _u_badge_vue_vue_type_template_id_2b1712d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./u-badge.vue?vue&type=template&id=2b1712d8&scoped=true& */ 239);
-/* harmony import */ var _u_badge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./u-badge.vue?vue&type=script&lang=js& */ 241);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _u_badge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _u_badge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _u_badge_vue_vue_type_style_index_0_id_2b1712d8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./u-badge.vue?vue&type=style&index=0&id=2b1712d8&lang=scss&scoped=true& */ 244);
-/* harmony import */ var _F_IDM_ZIP_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 44);
-
-var renderjs
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_F_IDM_ZIP_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _u_badge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _u_badge_vue_vue_type_template_id_2b1712d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _u_badge_vue_vue_type_template_id_2b1712d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  "2b1712d8",
-  null,
-  false,
-  _u_badge_vue_vue_type_template_id_2b1712d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["components"],
-  renderjs
-)
-
-component.options.__file = "uview-ui/components/u-badge/u-badge.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
 /***/ 239:
 /*!********************************************************************************************************************************************!*\
   !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uview-ui/components/u-badge/u-badge.vue?vue&type=template&id=2b1712d8&scoped=true& ***!
@@ -246,6 +205,47 @@ __webpack_require__.r(__webpack_exports__);
     if(false) { var cssReload; }
   
 
+/***/ }),
+
+/***/ 265:
+/*!*************************************************************************************************!*\
+  !*** C:/Users/Sdream/Documents/HBuilderProjects/DemoXR/uview-ui/components/u-badge/u-badge.vue ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _u_badge_vue_vue_type_template_id_2b1712d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./u-badge.vue?vue&type=template&id=2b1712d8&scoped=true& */ 239);
+/* harmony import */ var _u_badge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./u-badge.vue?vue&type=script&lang=js& */ 241);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _u_badge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _u_badge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _u_badge_vue_vue_type_style_index_0_id_2b1712d8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./u-badge.vue?vue&type=style&index=0&id=2b1712d8&lang=scss&scoped=true& */ 244);
+/* harmony import */ var _F_IDM_ZIP_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 44);
+
+var renderjs
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_F_IDM_ZIP_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _u_badge_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _u_badge_vue_vue_type_template_id_2b1712d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _u_badge_vue_vue_type_template_id_2b1712d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "2b1712d8",
+  null,
+  false,
+  _u_badge_vue_vue_type_template_id_2b1712d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["components"],
+  renderjs
+)
+
+component.options.__file = "uview-ui/components/u-badge/u-badge.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
 /***/ })
 
 }]);
@@ -254,7 +254,7 @@ __webpack_require__.r(__webpack_exports__);
     'uview-ui/components/u-badge/u-badge-create-component',
     {
         'uview-ui/components/u-badge/u-badge-create-component':(function(module, exports, __webpack_require__){
-            __webpack_require__('2')['createComponent'](__webpack_require__(238))
+            __webpack_require__('2')['createComponent'](__webpack_require__(265))
         })
     },
     [['uview-ui/components/u-badge/u-badge-create-component']]
