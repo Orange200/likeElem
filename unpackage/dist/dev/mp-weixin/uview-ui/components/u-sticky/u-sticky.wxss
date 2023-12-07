@@ -1,9 +1,0 @@
-@charset "UTF-8";
-/* 水平间距 */
-/* 水平间距 */
-/* uni.scss */
-.u-sticky.data-v-5d41d740 {
-  position: -webkit-sticky;
-  position: sticky;
-}
-

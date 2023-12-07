@@ -5,10 +5,12 @@ import App from './App'
 // import 'node_modules/element-ui/lib/theme-chalk/index.css';
 // main.js，注意要在use方法之后执行
 import uView from "uview-ui";
+//只导入需要的模块
+import cloneDeep from "lodash/cloneDeep";
 Vue.use(uView);
 // 如此配置即可
 uni.$u.config.unit = 'rpx'
-
+Vue.prototype.cloneDeep = cloneDeep //导入某个功能的挂载方式
 Vue.config.productionTip = false
 
 // Vue.use(ElementUI);

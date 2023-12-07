@@ -178,6 +178,10 @@ var _default2 = {
     foodNum: {
       type: Number,
       default: 0
+    },
+    isEvaluate: {
+      type: Boolean,
+      default: false
     }
   },
   components: {},

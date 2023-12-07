@@ -9,14 +9,14 @@
       <p :style="{ color: isArrive ? 'rgb(153, 153, 153)' : 'rgb(25, 25, 25)' }" class="isArrive">{{ isArrive == 1 ? '已送达' : '正在配送' }}</p>
     </view>
     <view class="isInArea" v-if="!isInArea"><text >超出配送范围</text></view>
-    <view class="order-list">
+    <view class="order-list"  :style="{ top: isInArea ? '50rpx' : '0'}">
       <image v-for="item in foodImages" :src="item" style="width: 128rpx; height: 128rpx; margin-right: 7rpx;border-radius:5%"></image>
       <text style="margin:50rpx 0 0 20rpx">{{foodName}}</text>
     </view>
-    <p class="order-price">
+    <view class="order-price" :style="{ top: isInArea ? '-57rpx' : '-51px'}" >
         ￥{{foodPrice}}
         <text style="color:rgb(153, 153, 153);margin-top:20rpx">共{{foodNum}}件</text>
-      </p>
+      </view>
   </view>
 </template>
 
@@ -55,6 +55,10 @@ export default {
     foodNum: {
       type: Number,
       default: 0
+    },
+    isEvaluate:{
+      type:Boolean,
+      default:false,
     }
   },
   components: {},
