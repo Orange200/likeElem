@@ -7,6 +7,7 @@
         <p style="color: rgb(153, 153, 153); margin-left: 20rpx">></p>
       </p>
       <p :style="{ color: isArrive ? 'rgb(153, 153, 153)' : 'rgb(25, 25, 25)' }" class="isArrive">{{ isArrive == 1 ? '已送达' : '正在配送' }}</p>
+      <text class="return-money" v-if="isReturnMoney">退款中</text>
     </view>
     <view class="isInArea" v-if="!isInArea"><text >超出配送范围</text></view>
     <view class="order-list"  :style="{ top: isInArea ? '50rpx' : '0'}">
@@ -59,6 +60,10 @@ export default {
     isEvaluate:{
       type:Boolean,
       default:false,
+    },
+    isReturnMoney:{
+      type:Boolean,
+      default:false,
     }
   },
   components: {},
@@ -96,6 +101,15 @@ export default {
   align-items: flex-end;
   position: absolute;
   right:32rpx;
+}
+.return-money{
+  font-size:28rpx ;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  right:32rpx;
+  margin-top: 40rpx;
 }
 .orderBusiness {
   display: flex;

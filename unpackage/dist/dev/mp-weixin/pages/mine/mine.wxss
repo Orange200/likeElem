@@ -3,6 +3,116 @@
 /* 水平间距 */
 /* uni.scss */
 .container.data-v-dcbcfe34 {
-  background-color: palegreen;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10rpx 0 10rpx;
+  justify-content: center;
+}
+.mine-title.data-v-dcbcfe34 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 380;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 30rpx;
+  top: 50rpx;
+}
+.mine-set.data-v-dcbcfe34 {
+  flex-direction: row;
+  position: absolute;
+  top: 150rpx;
+  left: 30rpx;
+}
+.mine-set-image.data-v-dcbcfe34 {
+  height: 80rpx;
+  width: 80rpx;
+  border: 20rpx solid #cbe5f0;
+  border-radius: 50%;
+  background-color: #cbe5f0;
+}
+.mine-set-accountName.data-v-dcbcfe34 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36rpx;
+  position: relative;
+  top: -60rpx;
+  left: 40rpx;
+}
+.mine-set-accountTel.data-v-dcbcfe34 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24rpx;
+  color: #999999;
+  position: relative;
+  top: -20rpx;
+  left: -148rpx;
+}
+.mine-set-vip.data-v-dcbcfe34 {
+  position: absolute;
+  top: 300rpx;
+  margin: 30rpx 10rpx 0 10rpx;
+  width: calc(100% - 20rpx);
+  height: 180rpx;
+  background-color: #3a4052;
+  border: 0 solid;
+  border-radius: 40rpx 40rpx 0 0;
+}
+.mine-set-vipcard.data-v-dcbcfe34 {
+  position: absolute;
+  top: 450rpx;
+  margin: 30rpx 10rpx 0 10rpx;
+  width: calc(100% - 20rpx);
+  height: 180rpx;
+  background-color: #ffffff;
+  border: 0 solid;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.mine-set-tools.data-v-dcbcfe34 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  top: 675rpx;
+  width: calc(100% - 20rpx);
+  height: 460rpx;
+  background-color: #ffffff;
+  border: 0 solid;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.mine-set-toolboxs.data-v-dcbcfe34 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 735rpx;
+  position: relative;
+  top: 64rpx;
+  left: -24rpx;
+}
+.mine-set-iconbox.data-v-dcbcfe34 {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: pink;
+  margin: 30rpx 20rpx 30rpx 20rpx;
+  padding: 10rpx;
+}
+.mine-set-toolboxs text.data-v-dcbcfe34 {
+  font-size: 20rpx;
+  width: 90rpx;
+  height: 24rpx;
+}
+.mine-set-tools image.data-v-dcbcfe34 {
+  height: 50rpx;
+  width: 50rpx;
+}
+.mine-set-tools-title.data-v-dcbcfe34 {
+  position: relative;
+  top: -100rpx;
+  left: 30rpx;
+  font-size: 29rpx;
 }
 

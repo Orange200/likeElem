@@ -21,6 +21,15 @@
   position: absolute;
   right: 32rpx;
 }
+.return-money.data-v-4d26b682 {
+  font-size: 28rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  right: 32rpx;
+  margin-top: 40rpx;
+}
 .orderBusiness.data-v-4d26b682 {
   display: flex;
   justify-content: flex-start;
