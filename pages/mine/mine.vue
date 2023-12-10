@@ -16,35 +16,35 @@
       <view class="mine-set-toolboxs">
         <view class="mine-set-iconbox">
           <image src="../../static/mineIcon/地址.png"></image>
-          <text>我的地址</text>
+          <view style="font-size: 20rpx; margin: 10rpx 0 0 6rpx">我的地址</view>
         </view>
         <view class="mine-set-iconbox">
           <image src="../../static/mineIcon/我的客服.png"></image>
-          <text>我的地址</text>
+          <view style="font-size: 20rpx; margin: 10rpx 0 0 6rpx">我的客服</view>
         </view>
         <view class="mine-set-iconbox">
           <image src="../../static/mineIcon/爱心.png"></image>
-          <text>我的地址</text>
+          <view style="font-size: 20rpx; margin: 10rpx 0 0 6rpx">店铺关注</view>
         </view>
         <view class="mine-set-iconbox">
           <image src="../../static/mineIcon/评价管理.png"></image>
-          <text>我的地址</text>
+          <view style="font-size: 20rpx; margin: 10rpx 0 0 6rpx">评价有礼</view>
         </view>
         <view class="mine-set-iconbox">
           <image src="../../static/mineIcon/感叹号圆.png"></image>
-          <text>我的地址</text>
+          <view style="font-size: 20rpx; margin: 10rpx 0 0 6rpx">用户协议</view>
         </view>
         <view class="mine-set-iconbox">
           <image src="../../static/mineIcon/bukejian.png"></image>
-          <text>我的地址</text>
+          <view style="font-size: 20rpx; margin: 10rpx 0 0 6rpx">隐私政策</view>
         </view>
         <view class="mine-set-iconbox">
           <image src="../../static/mineIcon/我的-我的账单.png"></image>
-          <text>我的地址</text>
+          <view style="font-size: 20rpx; margin: 10rpx 0 0 6rpx">我的账单</view>
         </view>
         <view class="mine-set-iconbox">
           <image src="../../static/mineIcon/消息中心.png"></image>
-          <text>我的地址</text>
+          <view style="font-size: 20rpx; margin: 10rpx 0 0 6rpx">消息中心</view>
         </view>
       </view>
     </view>
@@ -119,6 +119,12 @@ export default {
   top: -20rpx;
   left: -148rpx;
 }
+.mine-set-accountSet {
+  position: absolute;
+  top: 100rpx;
+  right: 50rpx;
+  z-index: 999;
+}
 .mine-set-vip {
   position: absolute;
   top: 300rpx;
@@ -147,10 +153,10 @@ export default {
   position: absolute;
   top: 675rpx;
   width: calc(100% - 20rpx);
-  height: 460rpx;
+  height: 420rpx;
   background-color: #ffffff;
   border: 0 solid;
-  border-radius: 20rpx 20rpx 0 0;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
 }
 .mine-set-toolboxs {
   display: flex;
@@ -158,16 +164,16 @@ export default {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 735rpx;
+  width: 800rpx;
   position: relative;
-  top: 64rpx;
-  left: -24rpx;
+  top: 50rpx;
+  left: -58rpx;
 }
 .mine-set-iconbox {
   width: 90rpx;
   height: 90rpx;
-  background-color: pink;
-  margin: 30rpx 20rpx 30rpx 20rpx;
+  background-color: #ffffff;
+  margin: 30rpx 23rpx 30rpx 23rpx;
   padding: 10rpx;
 }
 .mine-set-toolboxs text {
@@ -178,11 +184,15 @@ export default {
 .mine-set-tools image {
   height: 50rpx;
   width: 50rpx;
+  position: relative;
+  left: 18rpx;
 }
 .mine-set-tools-title {
   position: relative;
-  top: -100rpx;
+  width: 149rpx;
+  top: -130rpx;
   left: 30rpx;
   font-size: 29rpx;
+  margin-bottom: 20rpx;
 }
 </style>

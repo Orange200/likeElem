@@ -49,6 +49,12 @@
   top: -20rpx;
   left: -148rpx;
 }
+.mine-set-accountSet.data-v-dcbcfe34 {
+  position: absolute;
+  top: 100rpx;
+  right: 50rpx;
+  z-index: 999;
+}
 .mine-set-vip.data-v-dcbcfe34 {
   position: absolute;
   top: 300rpx;
@@ -77,10 +83,10 @@
   position: absolute;
   top: 675rpx;
   width: calc(100% - 20rpx);
-  height: 460rpx;
+  height: 420rpx;
   background-color: #ffffff;
   border: 0 solid;
-  border-radius: 20rpx 20rpx 0 0;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
 }
 .mine-set-toolboxs.data-v-dcbcfe34 {
   display: flex;
@@ -88,16 +94,16 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 735rpx;
+  width: 800rpx;
   position: relative;
-  top: 64rpx;
-  left: -24rpx;
+  top: 50rpx;
+  left: -58rpx;
 }
 .mine-set-iconbox.data-v-dcbcfe34 {
   width: 90rpx;
   height: 90rpx;
-  background-color: pink;
-  margin: 30rpx 20rpx 30rpx 20rpx;
+  background-color: #ffffff;
+  margin: 30rpx 23rpx 30rpx 23rpx;
   padding: 10rpx;
 }
 .mine-set-toolboxs text.data-v-dcbcfe34 {
@@ -108,11 +114,15 @@
 .mine-set-tools image.data-v-dcbcfe34 {
   height: 50rpx;
   width: 50rpx;
+  position: relative;
+  left: 18rpx;
 }
 .mine-set-tools-title.data-v-dcbcfe34 {
   position: relative;
-  top: -100rpx;
+  width: 149rpx;
+  top: -130rpx;
   left: 30rpx;
   font-size: 29rpx;
+  margin-bottom: 20rpx;
 }
 
